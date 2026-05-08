@@ -1,0 +1,84 @@
+:root {
+  --paper: #faf7ee;
+  --ink: #0d1117;
+  --muted: #5c625f;
+  --border: rgba(13, 17, 23, 0.16);
+  --accent: #dbff48;
+  --accent-blue: #4966ff;
+  --sans: Avenir Next, Avenir, Montserrat, Corbel, sans-serif;
+  --heading: Charter, Bitstream Charter, Sitka Text, Cambria, serif;
+  --mono: SFMono-Regular, Consolas, Liberation Mono, monospace;
+
+  font: 18px/1.5 var(--sans);
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(rgba(13, 17, 23, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13, 17, 23, 0.035) 1px, transparent 1px),
+    var(--paper);
+  background-size: 28px 28px;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  color: var(--ink);
+  letter-spacing: -0.055em;
+}
+
+h1 {
+  max-width: 1010px;
+  margin: 0 auto 26px;
+  font-size: clamp(58px, 10vw, 132px);
+  font-weight: 700;
+  line-height: 0.9;
+  @media (max-width: 1024px) {
+    font-size: clamp(48px, 15vw, 82px);
+  }
+}
+h2 {
+  margin: 0 0 16px;
+  font-size: clamp(36px, 5vw, 70px);
+  line-height: 0.96;
+  @media (max-width: 1024px) {
+    font-size: 38px;
+  }
+}
+p {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--ink);
+  color: var(--paper);
+}
