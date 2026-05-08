@@ -4,16 +4,16 @@ const supportEmail = 'support@lunilylabs.com'
 const effectiveDate = 'May 8, 2026'
 
 const services = [
-  'Missed-call text follow-up',
-  'Customer inquiry workflows',
-  'Appointment and demo coordination',
-  'AI-assisted business operations',
+  'AI software products',
+  'Business automation tools',
+  'Customer communication systems',
+  'Internal workflow platforms',
 ]
 
 const principles = [
-  'Simple systems that help small teams respond faster.',
-  'Human-controlled automation for customer conversations.',
-  'Clear consent, transparent messaging, and practical compliance.',
+  'We build focused tools that solve real operational problems.',
+  'We keep automation useful, explainable, and controlled by people.',
+  'We treat trust, consent, and privacy as part of the product design.',
 ]
 
 function App() {
@@ -49,7 +49,7 @@ function Header() {
 function Footer() {
   return (
     <footer className="site-footer">
-      <p>© {new Date().getFullYear()} Lunily Labs. Software services and AI automation for responsive teams.</p>
+      <p>© {new Date().getFullYear()} Lunily Labs. A software and AI product studio.</p>
       <div>
         <a href="/privacy">Privacy Policy</a>
         <a href="/terms">Terms</a>
@@ -65,11 +65,11 @@ function Home() {
       <Header />
       <main>
         <section className="hero-section">
-          <div className="eyebrow">Software systems for faster follow-up</div>
-          <h1>AI-assisted customer response for small business teams.</h1>
+          <div className="eyebrow">Software products and AI tools</div>
+          <h1>Building practical software for the next wave of small business operations.</h1>
           <p className="hero-copy">
-            Lunily Labs designs lightweight software and automation workflows that help businesses respond to missed calls,
-            answer inquiries, and coordinate next steps without losing the human touch.
+            Lunily Labs is a software and AI product studio developing focused tools for communication, operations,
+            automation, and business workflows. Shadowline is one of the products we are building.
           </p>
           <div className="hero-actions">
             <a className="button primary" href={`mailto:${supportEmail}`}>Start a conversation</a>
@@ -80,10 +80,11 @@ function Home() {
         <section className="panel-grid" id="services" aria-label="Lunily Labs services">
           <div className="panel intro-panel">
             <p className="section-label">What we build</p>
-            <h2>Practical automation for the moments after a customer reaches out.</h2>
+            <h2>A parent studio for Shadowline and future software products.</h2>
             <p>
-              We focus on simple, dependable tools for service businesses and lean teams: missed-call responses,
-              lead follow-up, appointment coordination, and operational workflows.
+              We create useful software across customer communication, AI assistance, workflow automation, and other
+              practical business tools. Some products are public, some are experiments, and others are built for specific
+              operational needs.
             </p>
           </div>
           {services.map((service) => (
@@ -97,7 +98,7 @@ function Home() {
         <section className="split-section">
           <div>
             <p className="section-label">How we work</p>
-            <h2>Useful software, clear messaging, and consent-first communication.</h2>
+            <h2>Small, capable products with a clear purpose.</h2>
           </div>
           <div className="principles">
             {principles.map((principle) => (
@@ -108,10 +109,11 @@ function Home() {
 
         <section className="contact-band">
           <p className="section-label">Contact</p>
-          <h2>Have a software or AI automation project in mind?</h2>
+          <h2>Have a software, AI, or product partnership question?</h2>
           <p>
-            Email us at <a href={`mailto:${supportEmail}`}>{supportEmail}</a>. If you request text follow-up,
-            message frequency varies. Message and data rates may apply. Reply STOP to opt out or HELP for help.
+            Email us at <a href={`mailto:${supportEmail}`}>{supportEmail}</a>. If you request text follow-up from
+            Lunily Labs, message frequency varies. Message and data rates may apply. Reply STOP to opt out or HELP for
+            help.
           </p>
         </section>
       </main>
@@ -152,8 +154,9 @@ function PrivacyPolicy() {
         <LegalSection title="SMS and mobile information">
           <p>
             If you provide your phone number and consent to text messages, Lunily Labs may send text messages related to
-            your inquiry, missed-call follow-up, service questions, meeting coordination, or customer support. Message
-            frequency varies. Message and data rates may apply. Reply STOP to opt out and HELP for help.
+            your inquiry, product or software questions, meeting coordination, customer support, or requested follow-up
+            about Lunily Labs products and services. Message frequency varies. Message and data rates may apply. Reply
+            STOP to opt out and HELP for help.
           </p>
           <p>
             Lunily Labs does not sell, rent, or share mobile phone numbers or SMS consent information with third parties
@@ -227,8 +230,8 @@ function TermsOfService() {
         <LegalSection title="SMS program terms">
           <p>
             Lunily Labs may send conversational text messages to people who contact us, request follow-up, submit an
-            inquiry, or otherwise consent to receive text messages from Lunily Labs. Messages may include missed-call
-            follow-up, responses to service inquiries, meeting or demo coordination, and customer support.
+            inquiry, or otherwise consent to receive text messages from Lunily Labs. Messages may include responses to
+            product or software inquiries, requested follow-up, meeting or demo coordination, and customer support.
           </p>
           <ul>
             <li>Program name: Lunily Labs customer communications.</li>
